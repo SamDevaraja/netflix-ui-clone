@@ -27,7 +27,7 @@ This project demonstrates:
 ## 🚀 Live Demo
 
 🔗 **Live Website:**  
-https://your-username.github.io/netflix-ui-clone/
+[https://your-username.github.io/netflix-ui-clone/](https://samdevaraja.github.io/netflix-ui-clone/)
 
 ## 💻 Source Code
 
@@ -93,3 +93,4 @@ This project is created for educational and internship purposes only. All images
 **Project Type:** UI Clone Challenge
 
 ### ⭐ If you like this project, don't forget to star the repository!
+
