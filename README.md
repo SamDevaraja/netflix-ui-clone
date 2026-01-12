@@ -32,7 +32,7 @@ This project demonstrates:
 ## 💻 Source Code
 
 📂 **GitHub Repository:**  
-https://github.com/your-username/netflix-ui-clone
+[https://github.com/your-username/netflix-ui-clone](https://github.com/SamDevaraja/netflix-ui-clone)
 
 ## 🛠️ Technologies Used
 
@@ -93,4 +93,5 @@ This project is created for educational and internship purposes only. All images
 **Project Type:** UI Clone Challenge
 
 ### ⭐ If you like this project, don't forget to star the repository!
+
 
