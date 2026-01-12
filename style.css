@@ -1,0 +1,333 @@
+/* ==================================================
+   GLOBAL RESET & BASE STYLES
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: white;
+}
+
+/* ==================================================
+   SIDEBAR (LEFT NAVIGATION)
+================================================== */
+.sidebar {
+    width: 72px;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+    gap: 34px;
+    z-index: 100;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sidebar i {
+    color: #b3b3b3;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.sidebar i.active,
+.sidebar i:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* ==================================================
+   MAIN LAYOUT
+================================================== */
+.main {
+    margin-left: 72px;
+    width: calc(100% - 72px);
+}
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding: 18vh 5vw;
+    max-width: 520px;
+}
+
+.series {
+    letter-spacing: 3px;
+    color: #bbb;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: red;
+}
+
+.rating {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.buttons button {
+    padding: 12px 26px;
+    font-size: 16px;
+    border: none;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.play {
+    background: #e50914;
+    color: white;
+}
+
+.trailer {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* ==================================================
+   HERO BOTTOM FADE
+================================================== */
+.fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.7),
+        #0b0b0b
+    );
+}
+
+/* ==================================================
+   ROW SECTIONS (GENERAL)
+================================================== */
+.row-section {
+    padding: 24px clamp(20px, 4vw, 56px);
+}
+
+.row-section h2 {
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+}
+
+/* ==================================================
+   HORIZONTAL ROWS
+================================================== */
+.row {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.row img {
+    width: 220px;
+    min-width: 180px;
+    max-width: 26vw;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.row img:hover {
+    transform: scale(1.18);
+    z-index: 10;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+/* ==================================================
+   NETFLIX ORIGINALS (FEATURED ROW)
+================================================== */
+.row-section.originals {
+    padding: 36px clamp(24px, 5vw, 64px);
+}
+
+.row-section.originals h2 {
+    font-size: 1.35rem;
+}
+
+.row-section.originals .row img {
+    width: 300px;
+    min-width: 240px;
+    max-width: 34vw;
+}
+
+.row-section.originals .row img:hover {
+    transform: scale(1.25);
+}
+
+/* ==================================================
+   RESPONSIVE — TABLET
+================================================== */
+@media (max-width: 1024px) {
+    .row img {
+        width: 180px;
+    }
+
+    .row-section.originals .row img {
+        width: 240px;
+    }
+}
+
+/* ==================================================
+   RESPONSIVE — MOBILE
+================================================== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 56px;
+    }
+
+    .main {
+        margin-left: 56px;
+        width: calc(100% - 56px);
+    }
+
+    .hero-content {
+        padding: 20vh 6vw;
+    }
+
+    .row img {
+        width: 150px;
+        min-width: 140px;
+    }
+
+    .row-section.originals .row img {
+        width: 200px;
+    }
+}
+
+/* ==================================================
+   TOP 10 IN INDIA TODAY (NETFLIX STYLE)
+================================================== */
+.row-section.top10 {
+    padding: 32px 24px;
+}
+
+.row-section.top10 h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.top10-row {
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 18px;
+}
+
+.top10-row::-webkit-scrollbar {
+    display: none;
+}
+
+.top10-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 76px;
+}
+
+.top10-number {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 8.8rem;
+    font-weight: 900;
+    letter-spacing: -0.12em;
+
+    color: transparent;
+    -webkit-text-stroke: 4px rgba(255, 255, 255, 0.35);
+
+    line-height: 1;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.top10-card:last-child {
+    padding-left: 88px;
+}
+
+.top10-card img {
+    width: 180px;
+    min-width: 160px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.top10-card img:hover {
+    transform: scale(1.12);
+    z-index: 5;
+}
+
+/* ==================================================
+   TOP 10 — MOBILE TUNING
+================================================== */
+@media (max-width: 768px) {
+    .top10-card {
+        padding-left: 60px;
+    }
+
+    .top10-card:last-child {
+        padding-left: 72px;
+    }
+
+    .top10-number {
+        font-size: 7.2rem;
+        letter-spacing: -0.1em;
+        -webkit-text-stroke: 3px rgba(255, 255, 255, 0.35);
+    }
+}
+
+/* ==================================================
+   ANIME SECTION
+================================================== */
+.row-section.anime h2 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+}
+
+.row-section.anime .row img {
+    border-radius: 6px;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.row-section.anime .row img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
