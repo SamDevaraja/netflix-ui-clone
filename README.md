@@ -6,6 +6,7 @@ A responsive Netflix Homepage UI clone built using HTML, CSS, and JavaScript as 
 
 - [Project Overview](#-project-overview)
 - [Live Demo](#-live-demo)
+- [Screenshots](#-screenshots)
 - [Source Code](#-source-code)
 - [Technologies Used](#️-technologies-used)
 - [Features](#-features)
@@ -27,12 +28,12 @@ This project demonstrates:
 ## 🚀 Live Demo
 
 🔗 **Live Website:**  
-[https://your-username.github.io/netflix-ui-clone/](https://samdevaraja.github.io/netflix-ui-clone/)
+https://samdevaraja.github.io/netflix-ui-clone/
 
 ## 💻 Source Code
 
 📂 **GitHub Repository:**  
-[https://github.com/your-username/netflix-ui-clone](https://github.com/SamDevaraja/netflix-ui-clone)
+https://github.com/SamDevaraja/netflix-ui-clone
 
 ## 🛠️ Technologies Used
 
@@ -58,6 +59,13 @@ This project demonstrates:
 - **Dark Theme**: Netflix-inspired dark color scheme.
 - **Performance**: Lightweight and fast-loading without heavy frameworks.
 
+## 📸 Screenshots
+
+Below is a preview of the Netflix Homepage UI Clone showcasing the hero section, content rows, and overall layout.
+
+![Netflix Homepage UI Clone](screenshot.png)
+
+
 ## 📱 Responsive Design
 
 The UI adapts seamlessly across devices using:
@@ -70,10 +78,11 @@ The UI adapts seamlessly across devices using:
 ```
 netflix-ui-clone/
 │
-├── index.html      
-├── style.css       
-├── script.js       
-└── README.md        
+├── index.html       # Main HTML file containing the structure of the webpage
+├── style.css        # CSS file for styling, animations, and responsive design
+├── script.js        # JavaScript file for interactive UI elements
+├── screenshot.png   # Screenshot image for the README
+└── README.md        # Project documentation and instructions
 ```
 
 ## ⚠️ Disclaimer
@@ -93,5 +102,3 @@ This project is created for educational and internship purposes only. All images
 **Project Type:** UI Clone Challenge
 
 ### ⭐ If you like this project, don't forget to star the repository!
-
-
